@@ -1,0 +1,58 @@
+.card {
+    padding: 6px;
+    transition: all .3s ease;
+    border-radius: 4px;
+    max-width: 100%;
+    text-align: center !important;
+
+    .avatar {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto;
+
+        img {
+            border-radius: 50% !important;
+            object-fit: cover;
+        }
+    }
+
+    .mediaBody {
+        h5 {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 27px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            overflow-wrap: break-word;
+            pointer-events: auto;
+            text-align: start !important;
+            color: #feb800;
+        }
+
+        span {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25.6px;
+            overflow-wrap: break-word;
+            text-align: start !important;
+            display: block;
+        }
+    }
+
+    .cardFooter {
+        p {
+            padding-top: 12px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25.6px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            overflow-wrap: break-word;
+            pointer-events: auto;
+            text-align: start !important;
+            text-transform: capitalize;
+            color: #fff;
+        }
+    }
+
+}

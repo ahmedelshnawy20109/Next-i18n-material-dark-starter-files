@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+.banner {
+    position: relative;
+    z-index: 0;
+    padding-bottom: 128px;
+    padding-top: 128px;
+    background-color: #fe805d;
+    .parallaxCursor {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+
+        div {
+            height: 100%;
+            position: absolute;
+
+            img {
+                object-fit: contain;
+            }
+        }
+    }
+
+    .content {
+        z-index: 1;
+        position: relative;
+        text-align: center !important;
+        padding: 32px 15px;
+
+        h1 {
+            font-family: Fredoka, sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 48px;
+            margin-bottom: 4px;
+            margin-top: 0px;
+            color: #fff;
+            text-align: center !important;
+            text-transform: capitalize;
+        }
+
+        .description {
+            font-family: Nunito, sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28.8px;
+            margin-bottom: 32px;
+            text-transform: capitalize;
+            text-align: center !important;
+            color: #fff;
+        }
+
+        .btnContainer {
+            transition: box-shadow .25s ease, transform .25s ease, -webkit-transform .25s ease;
+            min-width: 246px;
+            display: inline-block !important;
+
+            a {
+                color: #fe805d;
+            }
+
+            background-color: #fff;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15),
+            0 1px 1px rgba(22, 28, 45, .075);
+            font-weight: 500;
+            line-height: 1.64;
+            text-align: center !important;
+            vertical-align: middle;
+            cursor: pointer;
+            padding: 16px 20px;
+            font-size: 16px;
+            border-radius: 16px;
+        }
+    }
+}

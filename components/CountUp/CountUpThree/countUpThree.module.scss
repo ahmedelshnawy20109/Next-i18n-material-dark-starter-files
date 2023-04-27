@@ -1,0 +1,50 @@
+.CountUp {
+    background-image: url("../../../public/imgs/covers/cover-11.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 160px;
+    padding-top: 160px;
+
+    h2 {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 40.5px;
+        margin-bottom: 14.4px;
+        margin-top: 0px;
+        text-align: center !important;
+        color: #fff;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28.8px;
+        margin-bottom: 48px;
+        margin-top: 0px;
+        text-align: center !important;
+        text-transform: capitalize;
+        color: #fff;
+    }
+
+    .item {
+        span {
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 45.4833px;
+            margin-bottom: 16px;
+            text-align: center !important;
+            display: block;
+            color: #feb800;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28.8px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            text-align: center !important;
+            color: #fff;
+        }
+    }
+}

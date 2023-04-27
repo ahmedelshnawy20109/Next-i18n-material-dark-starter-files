@@ -1,0 +1,143 @@
+.countUp {
+    padding-bottom: 128px;
+    padding-top: 128px;
+    background-image: url("../../../public/imgs/covers/cover-6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .count {
+        h2 {
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 40.5px;
+            margin-bottom: 4px;
+            margin-top: 0px;
+            text-align: start !important;
+            color: #fff;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28.8px;
+            margin-bottom: 24px;
+            margin-top: 0px;
+            text-align: start !important;
+            text-transform: capitalize;
+            color: #fe805d;
+        }
+
+        span {
+            width: 90px;
+            height: 90px;
+            border: 2px solid #fff;
+            color: #fff;
+            margin-bottom: 16px;
+            border-radius: 50%;
+            display: block;
+            text-align: center !important;
+            font-size: 30px;
+            padding: 20px;
+        }
+
+        .countLabel {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28.8px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            text-align: center !important;
+
+        }
+    }
+
+    .formSection {
+        .formHeader {
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28.8px;
+                margin-bottom: 8px;
+                margin-top: 0px;
+                text-align: center !important;
+                text-transform: capitalize;
+                color: #fe805d;
+            }
+
+            h3 {
+                font-size: 22px;
+                font-weight: 500;
+                line-height: 30.8px;
+                margin-bottom: 32px;
+                margin-top: 0px;
+                text-align: center !important;
+                text-transform: uppercase;
+                color: #fff;
+            }
+        }
+
+        form {
+            padding: 40px;
+            border-radius: 8px;
+            background-color: #fff;
+
+            .formGroup {
+                box-sizing: border-box;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 25.6px;
+                margin-bottom: 32px;
+                text-align: start !important;
+
+                input {
+                    min-height: 50px;
+                    padding: 9px 16px;
+                    font-size: 16px;
+                    border-radius: 4px;
+                    display: block;
+                    width: 100%;
+                    font-weight: 400;
+                    line-height: 1.64;
+                    background-color: #fff;
+                    background-clip: padding-box;
+                    border: 1px solid var(--border-color);
+                    appearance: none;
+                    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+                    &:focus {
+                        border-color: var(--main-color-dark);
+                        outline: 0;
+                        box-shadow: inset 0 1px 2px rgba(22, 28, 45, .075), 0 0 0 0 transparent;
+                    }
+                }
+            }
+
+            .btn {
+                background-color: var(--main-color-dark);
+                border-radius: 4px;
+                box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 0px 0px inset, rgba(22, 28, 45, 0.075) 0px 1px 1px 0px;
+                box-sizing: border-box;
+                color: rgb(255, 255, 255);
+                cursor: pointer;
+                display: inline-block;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 26.2333px;
+                padding: 16px 20px;
+                text-align: center !important;
+                border: none;
+                display: block;
+                width: 100%;
+                transition-duration: 0.25s, 0.25s, 0.25s;
+                transition-property: box-shadow, transform, transform;
+                transition-timing-function: ease, ease, ease;
+
+                &:hover {
+                    box-shadow: 0 1rem 2.5rem rgba(140, 152, 164, .1), 0 .5rem 1rem -.75rem rgba(140, 152, 164, .1) !important;
+                    transform: translate3d(0, -3px, 0);
+                }
+            }
+        }
+    }
+
+}

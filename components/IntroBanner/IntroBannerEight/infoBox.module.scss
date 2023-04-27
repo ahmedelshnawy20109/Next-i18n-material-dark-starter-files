@@ -1,0 +1,37 @@
+.infoBox {
+    margin-top: -96px;
+    z-index: 2;
+    position: relative;
+    .item {
+        align-items: center !important;
+        display: flex !important;
+    
+        .icon {
+            margin-right: 16px;
+            color: #fff;
+        }
+    
+        .body {
+            h4 {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 29px;
+                margin-bottom: 0px;
+                margin-top: 0px;
+                text-align: start !important;
+                text-transform: uppercase;
+                color: #fff;
+            }
+            
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 25.6px;
+                margin-bottom: 0px;
+                margin-top: 0px;
+                text-align: start !important;
+                color: #fff;
+            }
+        }
+    }
+}

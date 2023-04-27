@@ -1,0 +1,74 @@
+.courses {
+    padding-bottom: 64px;
+    padding-top: 96px;
+    text-align: center !important;
+    background-color: var(--bg-alt-color);
+    border-bottom: 1px solid var(--border-color) !important;
+
+    .header {
+        margin-bottom: 48px;
+
+        h1 {
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 45.4833px;
+            margin-bottom: 4px;
+            margin-top: 0px;
+            text-align: start !important;
+            color: var(--main-color-dark);
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28.8px;
+            margin-bottom: 16px;
+            margin-top: 0px;
+            text-align: start !important;
+            text-transform: capitalize;
+        }
+    }
+
+    :global(.MuiTabs-flexContainer) {
+        justify-content: center;
+        margin-bottom: 32px;
+
+        button {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 25.6px;
+            margin-bottom: 4px;
+            margin-right: 4px;
+            padding-bottom: 9px;
+            padding-left: 32px;
+            padding-right: 32px;
+            padding-top: 9px;
+            text-align: start !important;
+            color: var(--main-color-dark);
+            border-radius: 50px;
+            text-transform: capitalize;
+
+            &:global(.Mui-selected) {
+                color: #fff !important;
+                background-color: var(--main-color-dark);
+            }
+        }
+    }
+
+    :global(.MuiTabs-indicator) {
+        display: none;
+    }
+
+
+    :global(.swiper-pagination) {
+        bottom: -5px;
+        text-align: center !important;
+
+        :global(.swiper-pagination-bullet-active) {
+            width: 20px;
+            background-color: var(--main-color-dark);
+            border-radius: 20px;
+        }
+    }
+
+}

@@ -22,7 +22,7 @@ const LangSwitch = () => {
 
   const switchLang = (lang) => {
     i18n.changeLanguage(lang);
-    cookie.set("grids-apps-shop-lang", lang, { path: "/" });
+    cookie.set("lms-lang", lang, { path: "/" });
 
     if (lang === "ar") {
       router.replace(router, null, { locale: lang });

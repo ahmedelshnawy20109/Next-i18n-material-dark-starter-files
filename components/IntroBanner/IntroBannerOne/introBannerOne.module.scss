@@ -1,0 +1,164 @@
+@import "../../../styles/mixins.scss";
+
+.intro {
+    position: relative;
+    background-color: var(--bg-alt-color);
+    padding-bottom: 160px;
+    padding-top: 160px;
+    overflow: hidden;
+
+    @include sm {
+        padding-bottom: 16px;
+        padding-top: 16px;
+
+    }
+
+    .parallaxCursor {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+
+        div {
+            height: 100%;
+            position: absolute;
+
+            img {
+                object-fit: contain;
+            }
+        }
+    }
+
+    .introContent {
+        @include md {
+            max-width: 720px;
+        }
+
+        @include sm {
+            max-width: 540px;
+        }
+
+        .bannerImg {
+            img {
+                max-width: 130% !important;
+                width: 130% !important;
+
+                @include sm {
+                    max-width: 100% !important;
+                    width: 100% !important;
+
+                }
+            }
+        }
+
+        h1 {
+            color: var(--main-color-dark);
+            font-size: 56px;
+            font-weight: 400;
+            line-height: 72px;
+            margin-bottom: 14.4px;
+            margin-top: 0px;
+            opacity: 1;
+            text-align: start;
+
+            @include sm {
+                font-size: 40px;
+            }
+
+            span {
+                color: var(--main-color-light);
+                font-size: 56px;
+                font-weight: 700;
+                line-height: 72px;
+                text-align: start;
+
+                @include sm {
+                    font-size: 40px;
+                }
+            }
+        }
+
+        p {
+            color: var(--text-color);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30.6px;
+            margin-bottom: 16px;
+            margin-top: 0px;
+            padding-right: 48px;
+            text-align: start;
+        }
+
+        .btnSlide {
+            z-index: 1;
+            position: relative;
+            background-attachment: scroll;
+            background-color: rgba(0, 0, 0, 0);
+            background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, var(--main-color-dark) 50%);
+            background-size: 200% 100%;
+            background-position: right bottom;
+            border: 1px solid var(--main-color-dark);
+            border-radius: 4px;
+            box-shadow: rgba(140, 152, 164, 0.1) 0px 8px 14.992px 0px;
+            box-sizing: border-box;
+            color: var(--main-color-dark);
+            cursor: pointer;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26.2333px;
+            margin-bottom: 0px;
+            margin-right: 24px;
+            min-width: 200px;
+            padding-bottom: 16px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 16px;
+            text-align: center !important;
+            text-decoration: none;
+            transform: none;
+            transition-delay: 0s;
+            transition-duration: 0.2s;
+            transition-property: all;
+            transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            vertical-align: middle;
+
+            &:hover {
+                color: #fff;
+                background-position: left bottom;
+            }
+        }
+
+        .btnPrimary {
+            @include md {
+                display: none;
+            }
+
+            border: 1px solid var(--main-color-dark);
+            border-radius: 4px;
+            background: var(--main-color-dark);
+            z-index: 1;
+            position: relative;
+            box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 0px 0px inset,
+            rgba(22, 28, 45, 0.075) 0px 1px 1px 0px;
+            box-sizing: border-box;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26.2333px;
+            min-width: 200px;
+            opacity: 1;
+            padding-bottom: 16px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 16px;
+            text-align: center !important;
+            text-decoration: none;
+            vertical-align: middle;
+        }
+    }
+
+}

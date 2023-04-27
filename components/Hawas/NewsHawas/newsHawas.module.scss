@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+@import "../../../styles/mixins.scss";
+
+.News {
+    padding-bottom: 96px;
+    padding-top: 96px;
+    background-color: var(--bg-alt-color);
+
+    @include sm {
+        padding-bottom: 48px;
+        padding-top: 48px;
+    }
+
+    .header {
+
+        margin-bottom: 40px;
+
+        h1 {
+            font-family: 'Tajawal', sans-serif;
+            font-size: 34.992px;
+            font-weight: 600;
+            line-height: 45.4833px;
+            margin-bottom: 4px;
+            margin-top: 0px;
+            text-align: center !important;
+            color: var(--main-color-dark);
+        }
+
+        p {
+            font-family: Nunito, sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28.8px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            pointer-events: auto;
+            text-align: center !important;
+            text-transform: capitalize;
+        }
+    }
+}

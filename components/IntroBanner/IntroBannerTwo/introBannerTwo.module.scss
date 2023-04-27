@@ -1,0 +1,109 @@
+@import "../../../styles/mixins.scss";
+.intro {
+    padding-top: 160px;
+    position: relative !important;
+    background-image: url("../../../public/imgs/parallax/illustration-13.svg");
+    overflow: hidden;
+    background-position: center;
+    @include sm {
+    padding-top: 128px;
+
+}
+    .parallaxCursor {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+
+        div {
+            height: 100%;
+            position: absolute;
+
+            img {
+                object-fit:fill ;
+                height: auto;
+            }
+        }
+    }
+
+    .introContent {
+        position: relative;
+        z-index: 1;
+        @include md {
+            max-width: 720px;
+        }
+
+        @include sm {
+            max-width: 540px;
+        }
+        .bannerText {
+           text-align: center !important;
+
+           h1 {
+               color: #fff;
+               font-size: calc(24px + 3vw);
+               font-weight: 400;
+               line-height: 72px;
+               margin-bottom: 14.4px;
+               margin-top: 0px;
+               opacity: 1;
+               text-align: center !important;
+               @include xs {
+                line-height: 24px;
+               }
+    
+               span {
+                   color: var(--main-color-light);
+                   font-size: calc(24px + 3vw);
+                   font-weight: 700;
+                   line-height: 72px;
+                   text-align: start;
+               }
+           }
+    
+           p {
+               color: #9ef3f6;
+               font-size: 18px;
+               font-weight: 400;
+               line-height: 30.6px;
+               margin-bottom: 16px;
+               margin-top: 0px;
+               text-align: center !important;
+           }
+    
+           .btn {
+               border-radius: 4px;
+               background: #b253f6;
+               z-index: 1;
+               min-width: 246px;
+               position: relative;
+               box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 0px 0px inset, rgba(22, 28, 45, 0.075) 0px 1px 1px 0px;
+               box-sizing: border-box;
+               color: rgb(255, 255, 255);
+               cursor: pointer;
+               display: inline-block;
+               font-size: 16px;
+               font-weight: 500;
+               line-height: 26.2333px;
+               opacity: 1;
+               padding-bottom: 16px;
+               padding-left: 20px;
+               padding-right: 20px;
+               padding-top: 16px;
+               text-align: center !important;
+               text-decoration: none;
+               vertical-align: middle;
+               margin: 4px auto 24px;
+               @include sm {
+                min-width: 180px;
+               }
+           }
+       }
+       img {
+        height: auto;
+       }
+
+    }
+
+}

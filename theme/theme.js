@@ -14,11 +14,11 @@ const cookie = new Cookies();
 
 const ThemeContextProvider = ({ children }) => {
   const [currentMode, setCurrentMode] = useState(
-    cookie.get("grids-apps-shop-mode") || "light"
+    cookie.get("lms-mode") || "light"
   );
 
   useEffect(() => {
-    if (cookie.get("grids-apps-shop-mode") === "dark") {
+    if (cookie.get("lms-mode") === "dark") {
       darkVars();
     } else {
       lightVars();
@@ -32,31 +32,31 @@ const ThemeContextProvider = ({ children }) => {
         ? {
             // palette values for light mode
             primary: {
-              main: "#BA2025",
+              main: "#090761",
             },
-            divider: "#BA2025",
+            divider: "#090761",
             background: {
               default: "#F8F9FA",
               secondary: "#fff",
             },
             text: {
-              primary: "#BA2025",
-              secondary: "#BA2025",
+              primary: "#090761",
+              secondary: "#090761",
             },
           }
         : {
             // palette values for dark mode
             primary: {
-              main: "#BA2025",
+              main: "#090761",
             },
-            divider: "#BA2025",
+            divider: "#090761",
             background: {
               default: "#222736",
               secondary: "#2f3446",
             },
             text: {
               primary: "#fff",
-              secondary: "#BA2025",
+              secondary: "#090761",
             },
           }),
     },

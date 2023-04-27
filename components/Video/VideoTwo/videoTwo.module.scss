@@ -1,0 +1,102 @@
+.video {
+    z-index: 10;
+    position: relative;
+
+    .video {
+        padding-bottom: 192px;
+        padding-top: 192px;
+        background-image: url(../../../public/imgs/covers/cover-2.jpg);
+        background-position: center;
+        margin: 24px 0;
+        display: block;
+        text-align: center !important;
+        cursor: pointer;
+        border-radius: 4px;
+
+        .btn {
+            margin: 0 auto;
+            height: 90px;
+            width: 90px;
+            transition: box-shadow .25s ease, transform .25s ease, -webkit-transform .25s ease;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0 .5rem .937rem rgba(140, 152, 164, .1) !important;
+            display: flex;
+            justify-content: center !important;
+            align-items: center !important;
+            box-shadow: 0 .5rem .937rem rgba(140, 152, 164, .1) !important;
+
+            svg {
+                width: 30px;
+                height: 30px;
+                color: var(--main-color-dark);
+            }
+        }
+    }
+
+    .text {
+        margin-left: 64px;
+        padding-left: 8px;
+
+        h3 {
+            font-size: 26px;
+            font-weight: 500;
+            line-height: 36.4px;
+            margin-bottom: 16px;
+            margin-top: 0px;
+            text-align: start !important;
+            color: var(--main-color-dark);
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px;
+            margin-bottom: 24px;
+            margin-right: 32px;
+            margin-top: 0px;
+            text-align: start !important;
+        }
+
+        ul {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25.6px;
+            margin-bottom: 32px;
+            margin-top: 0px;
+            padding-left: 16px;
+            list-style: disc;
+            text-align: start !important;
+
+            li {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 25.6px;
+                margin-bottom: 24px;
+                text-align: start !important;
+            }
+        }
+        .btn {
+            background: #e7643e;
+            border-radius: 8px;
+            box-shadow: rgba(140, 152, 164, 0.1) 0px 8px 14.992px 0px;
+            box-sizing: border-box;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26.2333px;
+            margin-bottom: 24px;
+            margin-top: 4px;
+            min-width: 200px;
+            opacity: 1;
+            padding-bottom: 16px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 16px;
+            text-align: center !important;
+        }
+    }
+
+}

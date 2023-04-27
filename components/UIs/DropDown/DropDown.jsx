@@ -15,12 +15,12 @@ const cookie = new Cookies();
 
 const DropDown = ({ menu }) => {
   const [openMenu, setOpenMenu] = useState(false);
-  const [lang, setLang] = useState(cookie.get("grids-apps-shop-lang"));
+  const [lang, setLang] = useState(cookie.get("lms-lang"));
   const { i18n } = useTranslation();
 
   useEffect(() => {
-    setLang(cookie.get("grids-apps-shop-lang"));
-  }, [cookie.get("grids-apps-shop-lang")]);
+    setLang(cookie.get("lms-lang"));
+  }, [cookie.get("lms-lang")]);
 
   const handleClick = () => {
     setOpenMenu(!openMenu);

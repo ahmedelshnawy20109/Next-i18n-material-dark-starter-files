@@ -1,6 +1,6 @@
 // IF USER CHANGES THE LANGUAGE MAUALLY FROM PAGE URL IT SHOULD REDIRECT HIM BACK TO THE ORIGINAL LANGUAGE
 const langRedirection = (req, locale) => {
-  const currentLang = req.cookies["grids-apps-shop-lang"] || "en";
+  const currentLang = req.cookies["lms-lang"] || "en";
 
   if (locale === currentLang) return;
 

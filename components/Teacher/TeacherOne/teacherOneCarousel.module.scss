@@ -1,0 +1,71 @@
+.teacher {
+    padding-bottom: 128px;
+    padding-top: 96px;
+    text-align: center !important;
+    background-image: url("../../../public/imgs/covers/cover-3.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position: left;
+
+    .header {
+        margin-bottom: 24px;
+
+        h1 {
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 46px;
+            margin-bottom: 16px;
+            margin-top: 0px;
+            text-align: center !important;
+            color: #fff;
+        }
+
+        h5 {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 27px;
+            margin-bottom: 48px;
+            margin-top: 0px;
+            text-align: center !important;
+            text-transform: capitalize;
+            color: #fff;
+        }
+        
+        p {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+            margin-bottom: 48px;
+            text-align: center !important;
+            color: #fff;
+        }
+        
+        .all {
+            display: block;
+            text-align: center !important;
+            margin: 24px 0 0;
+            color: #fff;
+
+            svg {
+                display: inline;
+                margin: 0 4px;
+            }
+        }
+    }
+
+    :global(.swiper) {
+        padding-bottom: 60px;
+
+        :global(.swiper-pagination) {
+            bottom: -5px;
+            text-align: center !important;
+
+            :global(.swiper-pagination-bullet-active) {
+                width: 20px;
+                background-color: var(--main-color-dark);
+                border-radius: 20px;
+            }
+        }
+    }
+}

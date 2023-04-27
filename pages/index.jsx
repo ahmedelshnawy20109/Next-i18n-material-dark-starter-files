@@ -13,14 +13,200 @@ import { wrapper } from "../store/store";
 // MATERIAL STUFF
 import Container from "@mui/material/Container";
 
+import {
+  IntroBannerOne,
+  CourseOneCarousel,
+  CategoriesOne,
+  TestimonialsOneCarousel,
+  PartnersOne,
+  EventsOne,
+  InstructorsOneCarousel,
+  NewsOne,
+  BannerOne,
+  IntroBannerTwo,
+  CategoriesTwo,
+  CoursesTwo,
+  VideoOne,
+  CountUpOne,
+  TeacherOneCarousel,
+  NewsTwo,
+  NewsletterOne,
+  IntroBannerThree,
+  WhyOne,
+  CoursesThree,
+  BannerTwo,
+  TestimonialsTwoCarousel,
+  CourseFourCarousel,
+  PricesOne,
+  MobileAppsOne,
+  IntroBannerFour,
+  CategoriesThree,
+  CoursesFive,
+  EventsTwo,
+  InstructorsTwoCarousel,
+  BannerThree,
+  IntroBannerFive,
+  CoursesSix,
+  WhyTwo,
+  FeaturesOne,
+  NewsThree,
+  InstructorsThreeCarousel,
+  TestimonialsThree,
+  Tweets,
+  IntroBannerSix,
+  CoursesSeven,
+  CategoriesFour,
+  EventsThree,
+  WhyThree,
+  NewsletterTwo,
+  IntroBannerSeven,
+  CoursesEight,
+  WhyFour,
+  VideoTwo,
+  TestimonialsFourCarousel,
+  CategoriesFive,
+  JobsOne,
+  BannerFour,
+  IntroBannerEight,
+  CategoriesSix,
+  CoursesNine,
+  BannerFive,
+  TestimonialsFiveCarousel,
+  EventsFour,
+  CountUpTwo,
+  NewsletterThree,
+  IntroBannerNine,
+  VideoThree,
+  NewsletterFour,
+  IntroBannerTen,
+  TestimonialsVideo,
+  InstructorsFourCarousel,
+  FeaturesTwo,
+  CountUpThree,
+  EventsFive,
+  BannerSix,
+  IntroBannerEleven,
+  WhyFive,
+  EventsSix,
+  IntroBannerTwelve,
+  CountUpFour,
+  CoursesTen,
+  FeaturesThree,
+  IntroBannerThirteen,
+  VideoFour,
+  IntroBannerFourteen,
+  WhySix,
+  WhySeven,
+  GalleryOne,
+  IntroBannerFifteen,
+  WhyEight,
+  WhyNine,
+  CourseElevenCarousel,
+  CountUpFive,
+  GalleryTwo,
+  BannerSeven
+  
+} from "../components"
+
+import { Grid } from "@mui/material";
+
 const Home = () => {
   const { t, i18n } = useTranslation("common");
 
   return (
     <div>
-      <Container>
-        <h1>{t("welcome")}</h1>
-      </Container>
+      <IntroBannerOne />
+      <CourseOneCarousel />
+      <CategoriesOne />
+      <TestimonialsOneCarousel />
+      <PartnersOne />
+      <EventsOne />
+      <InstructorsOneCarousel />
+      <NewsOne />
+      <BannerOne />
+      <IntroBannerTwo />
+      <CategoriesTwo />
+      <CoursesTwo />
+      <VideoOne />
+      <CountUpOne />
+      <TeacherOneCarousel />
+      <NewsTwo />
+      <NewsletterOne />
+      <IntroBannerThree />
+      <WhyOne />
+      <CoursesThree />
+      <BannerTwo />
+      <TestimonialsTwoCarousel />
+      <CourseFourCarousel />
+      <PricesOne />
+      <MobileAppsOne />
+      <IntroBannerFour />
+      <CategoriesThree />
+      <CoursesFive />
+      <EventsTwo />
+      <InstructorsTwoCarousel />
+      <BannerThree />
+      <IntroBannerFive />
+      <CoursesSix />
+      <WhyTwo />
+      <FeaturesOne />
+      <NewsThree />
+      <InstructorsThreeCarousel />
+      <TestimonialsThree />
+      <Tweets />
+      <IntroBannerSix />
+      <CoursesSeven />
+      <CategoriesFour />
+      <EventsThree />
+      <WhyThree />
+      <NewsletterTwo />
+      <IntroBannerSeven />
+      <CoursesEight />
+      <WhyFour />
+      <VideoTwo />
+      <TestimonialsFourCarousel />
+      <CategoriesFive />
+      <JobsOne />
+      <BannerFour />
+      <IntroBannerEight />
+      <CategoriesSix />
+      <CoursesNine />
+      <BannerFive />
+      <TestimonialsFiveCarousel />
+      <EventsFour />
+      <CountUpTwo />
+      <NewsletterThree />
+      <IntroBannerNine />
+      <VideoThree />
+      <NewsletterFour />
+      <IntroBannerTen />
+      <TestimonialsVideo />
+      <InstructorsFourCarousel />
+      <FeaturesTwo />
+      <CountUpThree />
+      <EventsFive />
+      <BannerSix />
+      <IntroBannerEleven />
+      <WhyFive />
+      <EventsSix />
+      <IntroBannerTwelve />
+      <CountUpFour />
+      <CoursesTen />
+      <FeaturesThree />
+      <IntroBannerThirteen />
+      <VideoFour />
+      <IntroBannerFourteen />
+      <WhySix />
+      <WhySeven />
+      <GalleryOne />
+      <IntroBannerFifteen />
+      <WhyEight />
+      <WhyNine />
+      <CourseElevenCarousel />
+      <CountUpFive />
+      <GalleryTwo />
+      <BannerSeven />
+      <LangSwitch />
     </div>
   );
 };

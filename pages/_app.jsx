@@ -26,11 +26,11 @@ function MyApp({ Component, ...rest }) {
   const [pageLoading, setPageLoading] = useState(false);
 
   useEffect(() => {
-    if (!cookie.get("grids-apps-shop-mode")) {
-      cookie.set("grids-apps-shop-mode", "light", { path: "/" });
+    if (!cookie.get("lms-mode")) {
+      cookie.set("lms-mode", "light", { path: "/" });
     }
-    if (!cookie.get("grrids-apps-shop-lang")) {
-      cookie.set("grrids-apps-shop-lang", "en", { path: "/" });
+    if (!cookie.get("lms-lang")) {
+      cookie.set("lms-lang", "en", { path: "/" });
     }
     // SHOW AND HIDE LOADING BETWEEN PAGES
     Router.events.on("routeChangeStart", () => {
@@ -44,11 +44,10 @@ function MyApp({ Component, ...rest }) {
   return (
     <div id={returnedProps.locale}>
       <Head>
-        <title>Grids Apps Shop</title>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;800;900&display=swap"
-          rel="stylesheet"
-        ></link>
+        <title>Grids Apps LMS</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></link>
         <link rel="shortcut icon" href="/favicon.png" />
       </Head>
 

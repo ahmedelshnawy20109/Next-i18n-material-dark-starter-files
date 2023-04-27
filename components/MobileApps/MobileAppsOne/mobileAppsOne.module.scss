@@ -1,0 +1,31 @@
+.mobileApps {
+    padding-bottom: 128px;
+    padding-top: 96px;
+    background-color: var(--bg-alt-color);
+
+    h1 {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 45.4833px;
+        margin-bottom: 40px;
+        margin-top: 0px;
+        text-align: center !important;
+        text-transform: capitalize;
+        color: var(--main-color-dark);
+    }
+
+    .content {
+        display: flex;
+        margin: 0 4px !important;
+        justify-content: space-between;
+
+        a {
+            transition: box-shadow .25s ease, transform .25s ease, -webkit-transform .25s ease;
+
+            &:hover {
+                box-shadow: 0 1rem 2.5rem rgba(140, 152, 164, .1), 0 .5rem 1rem -.75rem rgba(140, 152, 164, .1) !important;
+                transform: translate3d(0, -3px, 0);
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.gallery {
+    padding-top: 96px;
+    z-index: 10;
+
+    h1 {
+        font-family: Lora, serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 45.4833px;
+        margin-bottom: 4px;
+        margin-top: 0px;
+        text-align: center !important;
+        text-transform: capitalize;
+        color: var(--main-color-dark);
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28.8px;
+        margin-bottom: 64px;
+        margin-top: 0px;
+        text-align: center !important;
+        text-transform: capitalize;
+    }
+
+
+    a {
+        position: relative;
+        display: block;
+        cursor: pointer;
+
+        .meta {
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            visibility: hidden;
+            transition: all .3s ease;
+            text-transform: capitalize;
+            text-align: center !important;
+            position: absolute;
+            color: #fff;
+
+            .icon {
+                text-align: center !important;
+
+                svg {
+                    margin: 0 auto;
+                }
+            }
+
+            h2 {
+                font-family: Montserrat, sans-serif;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 32.4px;
+                margin-bottom: 0px;
+                margin-top: 0px;
+                max-width: 200px;
+                text-align: center !important;
+                text-transform: capitalize;
+                visibility: visible;
+            }
+        }
+
+        &:hover {
+            .meta {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}

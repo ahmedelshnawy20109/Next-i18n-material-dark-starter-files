@@ -1,0 +1,147 @@
+.why {
+    background-color: #E8F8FB;
+    padding-bottom: 128px;
+    padding-top: 128px;
+    position: relative;
+
+    .container {
+        z-index: 1;
+        position: relative;
+        .header {
+            h1 {
+                font-size: 36px;
+                font-weight: 500;
+                line-height: 45.4833px;
+                margin-bottom: 4px;
+                margin-top: 0px;
+                text-align: center !important;
+                text-transform: capitalize;
+                color: var(--main-color-dark);
+            }
+    
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28.8px;
+                margin-bottom: 40px;
+                margin-top: 0px;
+                text-align: center !important;
+                text-transform: capitalize;
+            }
+        }
+    
+        .nav {
+            justify-content: center !important;
+            line-height: 25.6px;
+            margin-bottom: 64px;
+            margin-left: -24px;
+            margin-right: -24px;
+            margin-top: 0px;
+            padding-left: 0px;
+            text-align: start !important;
+            text-transform: capitalize;
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 0;
+            list-style: none;
+            justify-content: center;
+    
+            li {
+                margin-bottom: 0px;
+                padding-left: 24px;
+                padding-right: 24px;
+    
+                a {
+                    opacity: 0.4;
+                    color: var(--main-color-dark);
+                    transition: all .3s ease;
+                    font-weight: 500;
+    
+                    .fontXxl {
+                        font-size: 26px;
+                        font-weight: 500;
+                        line-height: 41.6px;
+                        margin-right: 12px;
+                        text-align: start !important;
+                        text-transform: capitalize;
+                    }
+    
+                    .fontLg {
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 28.8px;
+                        text-align: start !important;
+                        text-transform: capitalize;
+                    }
+    
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    
+        img {
+            border-radius: 8px;
+    
+        }
+    
+        h3 {
+            font-size: 26px;
+            font-weight: 500;
+            line-height: 36.4px;
+            margin-bottom: 16px;
+            margin-top: 0px;
+            text-align: start !important;
+            color: var(--main-color-dark);
+        }
+    
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px;
+            margin-bottom: 24px;
+            margin-right: 32px;
+            margin-top: 0px;
+            text-align: start !important;
+        }
+    
+        .whyList {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25.6px;
+            margin-bottom: 32px;
+            margin-top: 0px;
+            padding-left: 16px;
+            text-align: start !important;
+            list-style: disc;
+    
+            li {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 25.6px;
+                margin-bottom: 24px;
+                text-align: start !important;
+            }
+        }
+    
+        .btn {
+            background-color: rgb(78, 53, 163);
+            border-radius: 8px;
+            box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 0px 0px inset, rgba(22, 28, 45, 0.075) 0px 1px 1px 0px;
+            box-sizing: border-box;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26.2333px;
+            min-width: 200px;
+            padding-bottom: 16px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 16px;
+            text-align: center !important;
+        }
+    }
+}

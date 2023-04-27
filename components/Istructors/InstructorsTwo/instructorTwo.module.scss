@@ -1,0 +1,105 @@
+.instructor {
+    position: relative;
+    width: 100%;
+    padding: 8px !important;
+    border-radius: 4px;
+
+    &:hover {
+
+        .cardZoom {
+            .cardFloat {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .cardImg {
+                &::before {
+                    opacity: .8;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+    
+    .cardZoom {
+        overflow: hidden !important;
+        border-radius: 4px;
+        position: relative !important;
+        
+        .cardFloat {
+            left: 0;
+            bottom: 60px;
+            right: 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: all .2s ease-in-out;
+            position: absolute;
+            z-index: 100;
+            width: 150px;
+            margin: 0 auto;
+            
+            .nav {
+                width: 150px;
+                -webkit-box-pack: center !important;
+                justify-content: center !important;
+                display: flex;
+                flex-wrap: wrap;
+                padding-left: 0;
+                margin-bottom: 0;
+                list-style: none;
+                
+                li {
+                    padding-right: 6px !important;
+                    padding-left: 6px !important;
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        
+        .cardImg {
+            margin: 0 auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            transition: all .3s ease;
+            transform-origin: center center;
+            position: relative;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: block !important;
+
+            &::before {
+                content: " ";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: var(--main-color-dark);
+                opacity: 0;
+                visibility: hidden;
+                z-index: 1;
+            }
+        }
+    }
+
+    .cardFooter {
+        padding: 16px 12px 4px !important;
+        text-align: center !important;
+        h5 {
+            color: var(--main-color-dark);
+            font-weight: 500;
+            font-size: 18px;
+            text-align: center !important;
+        }
+        span {
+            text-align: center !important;
+            
+        }
+    }
+}

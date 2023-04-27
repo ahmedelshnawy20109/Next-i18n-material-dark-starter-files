@@ -1,0 +1,106 @@
+.instructor {
+    transition: box-shadow .25s ease, transform .25s ease, -webkit-transform .25s ease;
+    position: relative;
+    width: 100%;
+    padding: 8px !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 4px;
+
+    &:hover {
+        box-shadow: 0 1rem 2.5rem rgba(140, 152, 164, .1), 0 .5rem 1rem -.75rem rgba(140, 152, 164, .1) !important;
+        transform: translate3d(0, -3px, 0);
+
+        .cardZoom {
+            .cardFloat {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .cardImg {
+                &::before {
+                    opacity: .8;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+    .cardZoom {
+        overflow: hidden !important;
+        border-radius: 4px;
+        position: relative !important;
+
+        .cardFloat {
+            left: 0;
+            bottom: 0;
+            right: 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: all .2s ease-in-out;
+            position: absolute;
+            z-index: 100;
+            margin-bottom: 16px !important;
+
+            .nav {
+                margin-right: -16px !important;
+                margin-left: -16px !important;
+                -webkit-box-pack: center !important;
+                justify-content: center !important;
+                display: flex;
+                flex-wrap: wrap;
+                padding-left: 0;
+                margin-bottom: 0;
+                list-style: none;
+
+                li {
+                    padding-right: 16px !important;
+                    padding-left: 16px !important;
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .cardImg {
+            transition: all .3s ease;
+            transform-origin: center center;
+            position: relative;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: block !important;
+            border-radius: 4px;
+
+            &::before {
+                content: " ";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: var(--main-color-dark);
+                opacity: 0;
+                visibility: hidden;
+                z-index: 1;
+            }
+        }
+    }
+
+    .cardFooter {
+        padding: 16px 12px 4px !important;
+        text-align: center !important;
+        h5 {
+            color: var(--main-color-dark);
+            font-weight: 500;
+            font-size: 18px;
+            text-align: center !important;
+        }
+        span {
+            text-align: center !important;
+            
+        }
+    }
+}

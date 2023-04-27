@@ -7,7 +7,7 @@
 // }
 
 /***************  { General Styles For Elements }   *****************/
-$mainColor: #ba2025;
+$mainColor: #090761;
 $h1: 2rem;
 $h2: 1.714rem;
 $h3: 1.5rem;
@@ -32,7 +32,7 @@ html,
 body {
   height: 100%;
   // font-family: IBMPlexSansArabic;
-  font-family: "Cairo", sans-serif;
+  font-family: 'Jost', sans-serif;
   color: var(--text-color);
   background-color: var(--default-background);
 }
@@ -594,7 +594,7 @@ button.swal2-cancel {
   height: 45px !important;
   border-radius: 50%;
   background-color: var(--default-background);
-  color: var(--main-color) !important;
+  color: var(--main-color);
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   &:after {
     font-size: 1rem !important;
@@ -674,5 +674,22 @@ button.swal2-cancel {
       left: unset;
       right: 0;
     }
+  }
+}
+
+:global(.MuiPaper-root) {
+  color: var(--main-color-dark);
+}
+.swiper {
+  padding-bottom: 60px !important;
+}
+.swiper-pagination {
+  bottom: -5px !important;
+  text-align: center !important;
+
+  .swiper-pagination-bullet-active {
+      width: 20px;
+      background-color: var(--main-color-dark);
+      border-radius: 20px;
   }
 }

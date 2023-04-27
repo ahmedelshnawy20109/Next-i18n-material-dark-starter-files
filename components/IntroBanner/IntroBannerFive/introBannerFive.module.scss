@@ -1,0 +1,72 @@
+.intro {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 128px;
+    padding-top: 192px;
+    background: linear-gradient(90deg, #FFEBE5 0.13%, #EDEAF6 100.01%);
+
+    .introContent {
+
+        .bannerImg {
+            img {
+                max-width: 150% !important;
+                width: 150% !important;
+            }
+        }
+
+        h1 {
+            background: linear-gradient(90deg, var(--main-color-light) .78%, var(--main-color-dark) 71.02%);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 60px;
+            font-weight: 400;
+            line-height: 72px;
+            margin-bottom: 14.4px;
+            margin-top: 0px;
+            opacity: 1;
+            text-align: start;
+            text-transform: capitalize;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30.6px;
+            margin-bottom: 16px;
+            margin-top: 0px;
+            opacity: 1;
+            padding-right: 128px;
+            text-align: start;
+            text-transform: capitalize;
+        }
+
+
+        .btn {
+            background-color: var(--main-color-light);
+            &:last-of-type {
+                background-color: var(--main-color-dark);
+            }
+            margin-right: 24px;
+            border-radius: 8px;
+            box-shadow: rgba(140, 152, 164, 0.1) 0px 8px 14.992px 0px;
+            box-sizing: border-box;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26.2333px;
+            margin-bottom: 24px;
+            margin-top: 4px;
+            min-width: 200px;
+            opacity: 1;
+            padding-bottom: 16px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 16px;
+            text-align: center !important;
+        }
+    }
+
+}

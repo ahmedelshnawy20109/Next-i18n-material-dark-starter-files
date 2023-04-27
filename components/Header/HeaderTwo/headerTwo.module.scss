@@ -1,0 +1,238 @@
+@import '../../../styles/mixins.scss';
+
+.navbar {
+  padding: 16px 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  @include lg {
+    padding: 8px 0;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: inherit;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    @include lg {
+      max-width: 960px;
+    }
+    @include md {
+      max-width: 720px;
+    }
+    @include sm {
+      max-width: 540px;
+    }
+
+    .logo {
+      -webkit-filter: brightness(0) invert(1);
+      filter: brightness(0) invert(1);
+      color: #fff;
+
+      img {
+        width: 175px;
+
+        @include lg {
+          width: 147px;
+        }
+      }
+    }
+
+    .links {
+      display: flex !important;
+      flex-basis: auto;
+      z-index: 999;
+      -webkit-box-flex: 1;
+      flex-grow: 1;
+      -webkit-box-align: center;
+      align-items: center;
+
+      @include lg {
+        display: none !important;
+      }
+
+      .navLinks {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+        margin-left: auto;
+        display: flex;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+
+        .link {
+          position: relative;
+          padding: 24px 26.24px;
+          color: #fff;
+
+          &.maxWidth {
+            position: static;
+          }
+
+          span {}
+
+          .linkDropdown2 {
+            padding: 26px 48px;
+            position: absolute;
+            display: block;
+            box-shadow: 0 1.5rem 4rem rgba(140, 152, 164, .15);
+            border-radius: 4px;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            border: 1px solid #e7e7ec !important;
+            background-color: #fff;
+            animation: show2 0.3s forwards;
+            min-width: 632px;
+
+            &.maxWidth {
+              width: 100%;
+            }
+
+            &.auto {
+              min-width: 260px;
+            }
+
+
+            .item {
+              img {
+                height: 152px !important;
+                width: 152px;
+                border-radius: 4px;
+                margin-bottom: 24px;
+                margin-left: 23.3333px;
+                margin-right: 23.3333px;
+                border: 1px solid #e7e7ec !important;
+                box-shadow: 0 .5rem .937rem rgba(140, 152, 164, .1) !important;
+              }
+
+              h6 {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24.8px;
+                list-style-image: none;
+                list-style-position: outside;
+                list-style-type: none;
+                margin-bottom: 0px;
+                margin-top: 0px;
+                text-align: center !important;
+                white-space: nowrap;
+                color: #090761;
+              }
+            }
+
+            h5 {
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 27.9px;
+              list-style-image: none;
+              list-style-position: outside;
+              list-style-type: none;
+              margin-bottom: 0px;
+              margin-left: -28px;
+              margin-right: -28px;
+              margin-top: 32px;
+              padding-bottom: 14.4px;
+              padding-left: 28px;
+              padding-right: 28px;
+              padding-top: 0px;
+              text-align: start !important;
+              text-transform: capitalize;
+              white-space: nowrap;
+              color: #090761;
+            }
+
+            a {
+              display: block;
+              margin-top: 8px;
+
+              &:hover {
+                color: #090761;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .drawers {
+      -webkit-box-orient: horizontal !important;
+      -webkit-box-direction: normal !important;
+      flex-direction: row !important;
+      display: flex;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+
+      .drawerItem {
+        padding: 24px 16px;
+        display: flex !important;
+        align-items: center;
+        color: #fff;
+
+        &.mobileNave {
+          display: none !important;
+          color: #fff;
+
+          @include lg {
+            display: block !important;
+          }
+        }
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      @include lg {
+        display: none !important;
+      }
+      a {
+        background-color: #fff;
+        color: #090761;
+        border-radius: 4px;
+        padding: 12px 40px;
+      }
+    }
+  }
+
+  @keyframes show {
+    0% {
+      opacity: 0;
+      transform: translate(0, 30px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+
+    }
+  }
+
+  @keyframes show2 {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, 30px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate(-50%, 0);
+
+    }
+  }
+}

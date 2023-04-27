@@ -1,0 +1,129 @@
+@import "../../../styles/mixins.scss";
+
+.drawer {
+    padding: 44px 40px;
+    width: 460px;
+    max-width: 90%;
+    @include sm {
+        padding: 26px 20px;
+        width: 300px;
+    }
+
+
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        h5 {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28.8px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            pointer-events: auto;
+            text-align: start !important;
+
+            @include sm {
+                font-size: 16px;
+            }
+        }
+
+        button {
+            background-color: transparent;
+            border: 0;
+            cursor: pointer;
+            color: var(--main-color-dark);
+        }
+    }
+
+    .body {
+        ul {
+            margin-bottom: 24px;
+
+            li {
+                border-bottom: 1px solid #e7e7ec;
+
+                .item {
+                    padding: 24px 0;
+                    display: flex;
+                    align-items: center;
+
+                    .avatar {
+                        height: 60px;
+                        width: 60px;
+                        border-radius: 50%;
+                        background-color: #e7e7ec;
+                    }
+
+                    .text {
+                        margin-left: 16px;
+                        -webkit-box-flex: 1 !important;
+                        flex-grow: 1 !important;
+
+                        h6 {
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 24.8px;
+                            margin-bottom: 0px;
+                            margin-top: 0px;
+                            pointer-events: auto;
+                            text-align: start !important;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 22.4px;
+                            pointer-events: auto;
+                            text-align: start !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .total {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 24px;
+
+            h5 {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 27px;
+                margin-bottom: 0px;
+                margin-top: 0px;
+                pointer-events: auto;
+                text-align: start !important;
+            }
+        }
+
+        .btns {
+            display: flex;
+            -webkit-box-pack: justify !important;
+            justify-content: space-between !important;
+
+            @include sm {
+                display: block;
+            }
+
+            a {
+                min-width: 150px;
+                padding: 16px 20px;
+                border-radius: 4px;
+                text-align: center !important;
+                display: block;
+                margin-bottom: 16px;
+                color: #fff;
+                background-color: #09075f;
+
+                &:last-of-type {
+                    background-color: #4a8f9f;
+                }
+            }
+        }
+    }
+}

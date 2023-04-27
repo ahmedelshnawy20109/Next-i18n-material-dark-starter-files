@@ -1,0 +1,78 @@
+.category {
+    box-shadow: none !important;
+    transition: box-shadow .25s ease,transform .25s ease,-webkit-transform .25s ease;
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 24px !important;
+    text-align: center !important;
+    border: none;
+
+    &:hover {
+        box-shadow: 0 .5rem 1.5rem rgba(140,152,164,.15) !important;
+        transform: translate3d(0, -3px, 0);
+        border: 1px solid var(--border-color);
+
+        .iconContainer {
+            .icon {
+                i {
+                    color: var(--main-color-dark);
+                }
+            }
+        }
+    }
+
+    .iconContainer {
+        color: var(--text-color) !important;
+        position: relative;
+        text-align: center !important;
+
+        .icon {
+            text-align: center !important;
+
+            i {
+                transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                font-size: 36px;
+                line-height: 36px;
+
+            }
+        }
+
+        svg {
+            margin: 0 auto;
+            opacity: 0.2;
+        }
+    }
+
+    .cardFooter {
+        position: relative;
+        min-height: 1px;
+
+        h5 {
+            text-align: start !important;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            margin-bottom: 0 !important;
+            line-height: 16px;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--main-color-dark)
+        }
+
+        p {
+            text-align: start !important;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            margin-bottom: 0 !important;
+            color: var(--text-color);
+            line-height: 16px;
+
+        }
+    }
+}

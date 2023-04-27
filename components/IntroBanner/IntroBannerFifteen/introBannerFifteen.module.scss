@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+.intro {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh !important;
+    position: relative;
+
+    &::before {
+        background: linear-gradient(288.36deg, rgba(254, 190, 68, .9) 22.61%, rgba(255, 142, 113, .9) 43.82%, rgba(15, 138, 194, .9) 79.04%);
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: inherit;
+        z-index: 0;
+    }
+
+    .container {
+        z-index: 2;
+        position: relative;
+
+        .content {
+            height: 100vh !important;
+
+            .innerContent {
+                margin: auto 0;
+                text-align: start !important;
+
+                h5 {
+                    font-family: Nunito, sans-serif;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 27px;
+                    margin-bottom: 8px;
+                    margin-top: 0px;
+                    opacity: 1;
+                    text-align: start !important;
+                    text-transform: capitalize;
+                    color: #9ef3f6;
+                }
+
+                h1 {
+                    font-family: 'Fredoka', sans-serif;
+                    font-size: 60px;
+                    font-weight: 700;
+                    line-height: 72px;
+                    margin-bottom: 24px;
+                    margin-top: 0px;
+                    opacity: 1;
+                    pointer-events: auto;
+                    text-align: start !important;
+                    text-transform: capitalize;
+                    color: #fff;
+                }
+
+                .btnPrimary {
+                    border: 1px solid #feb800;
+                    border-radius: 16px;
+                    background: #feb800;
+                    z-index: 1;
+                    position: relative;
+                    box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 0px 0px inset, rgba(22, 28, 45, 0.075) 0px 1px 1px 0px;
+                    box-sizing: border-box;
+                    color: #fff;
+                    cursor: pointer;
+                    display: inline-block;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 26.2333px;
+                    min-width: 200px;
+                    opacity: 1;
+                    padding-bottom: 16px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-top: 16px;
+                    text-align: center !important;
+                    text-decoration: none;
+                    vertical-align: middle;
+                }
+            }
+
+            
+        }
+    }
+
+    :global(.swiper) {
+        padding-bottom: 0 !important;
+
+        :global(.swiper-button-prev) {
+            left: auto;
+            background: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+
+            &:hover {
+                color: var(--main-color-dark) !important;
+                background: #fff !important;
+
+                &::after {
+                    color: var(--main-color-dark) !important;
+                }
+            }
+        }
+
+        :global(.swiper-button-next) {
+            left: auto;
+            background: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+
+            &:hover {
+                color: var(--main-color-dark) !important;
+                background: #fff !important;
+
+                &::after {
+                    color: var(--main-color-dark) !important;
+                }
+            }
+        }
+    }
+}

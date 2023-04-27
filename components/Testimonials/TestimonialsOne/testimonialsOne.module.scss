@@ -1,0 +1,45 @@
+.card {
+    padding: 32px;
+    transition: all .3s ease;
+    border: 1px solid var(--border-color) !important;
+    background-color: #fff;
+    border-radius: 4px;
+
+    .avatar {
+        width: 70px;
+        height: 70px;
+
+        img {
+            border-radius: 50% !important;
+            object-fit: cover;
+        }
+    }
+
+    .name {
+        h5 {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 27px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            overflow-wrap: break-word;
+            pointer-events: auto;
+            text-align: start;
+            color: var(--main-color-dark);
+        }
+    }
+
+    .cardFooter {
+        padding-top: 12px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25.6px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        overflow-wrap: break-word;
+        pointer-events: auto;
+        text-align: start !important;
+        text-transform: capitalize
+    }
+
+}

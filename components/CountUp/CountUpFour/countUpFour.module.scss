@@ -1,0 +1,119 @@
+.countUp {
+    padding-bottom: 128px;
+    padding-top: 128px;
+    background-color: #f0b26b;
+    position: relative;
+
+    .parallaxCursor {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+
+        div {
+            height: 100%;
+            position: absolute;
+
+            img {
+                object-fit: contain;
+            }
+        }
+    }
+
+    .count {
+        z-index: 1;
+
+        h4 {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 29px;
+            margin-bottom: 14.4px;
+            margin-top: 0px;
+            pointer-events: auto;
+            text-align: start !important;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 55px;
+            font-weight: 500;
+            line-height: 65.9833px;
+            margin-bottom: 16px;
+            margin-top: 0px;
+            pointer-events: auto;
+            text-transform: capitalize;
+            text-align: start !important;
+            color: #fff;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25.6px;
+            margin-bottom: 24px;
+            margin-right: 96px;
+            margin-top: 0px;
+            pointer-events: auto;
+            text-align: start !important;
+            color: #fff;
+        }
+
+        span {
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 45.4833px;
+            pointer-events: auto;
+            text-align: start !important;
+            color: #fff;
+        }
+
+        .label {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28.8px;
+            margin: 0px;
+            pointer-events: auto;
+            text-align: start !important;
+        }
+
+        .btn {
+            background-color: var(--main-color-dark);
+            border-radius: 8px;
+            box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 0px 0px inset, rgba(22, 28, 45, 0.075) 0px 1px 1px 0px;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26.2333px;
+            min-width: 200px;
+            padding: 16px 20px;
+            margin-top: 32px;
+            text-align: center !important;
+        }
+    }
+
+    .img {
+        z-index: 1;
+
+        img {
+            width: 130% !important;
+            max-width: 130% !important;
+        }
+    }
+
+    .shape {
+        right: 0;
+        bottom: 100%;
+        left: 0;
+        position: absolute;
+        pointer-events: none;
+        color: #f0b26b;
+        svg {
+            transform-origin: top center;
+        }
+    }
+
+}

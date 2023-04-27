@@ -1,6 +1,6 @@
 // IF USER TRIED TO ENTER A PROTECTED PAGE IT SHOULD REDIRECT HIM TO HOME PAGE
 const routeRedirection = (req, resolvedUrl) => {
-  const authenticated = req.cookies["grids-apps-shop-token"] || "yes";
+  const authenticated = req.cookies["lms-token"] || "yes";
 
   const requireAuthRoutes = ["/cart"];
   const requireNoAuthRoutes = ["/login"];
