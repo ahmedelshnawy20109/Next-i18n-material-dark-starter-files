@@ -1,7 +1,7 @@
 import Link from "next/link.js";
 import React from "react";
 
-import cls from "./categoryOne.module.scss"
+import cls from './categoryOne.module.scss';
 
 const CategoryOne = () => {
     return (

@@ -10,9 +10,7 @@ import CategoryFive from "./CategoryFive";
 
 import 'swiper/css';
 import "swiper/css/pagination";
-import cls from "./categoriesFive.module.scss"
-
-
+import cls from "./categoriesFive.module.scss";
 
 const CategoriesFive = () => {
     const pagination = {
@@ -23,8 +21,8 @@ const CategoriesFive = () => {
         <section className={cls.categories}>
             <Container maxWidth="xl">
                 <div className={cls.header}>
-                        <h1>Trending Categories</h1>
-                        <p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+                    <h1>Trending Categories</h1>
+                    <p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
                 </div>
                 <Swiper
                     slidesPerView={1}
@@ -48,33 +46,33 @@ const CategoriesFive = () => {
                     }}
                 >
                     <SwiperSlide>
-                        <CategoryFive bgColor="#F0D078"/>
+                        <CategoryFive bgColor="#F0D078" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <CategoryFive bgColor="#3c5799"/>
+                        <CategoryFive bgColor="#3c5799" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <CategoryFive bgColor="#327ffe"/>
+                        <CategoryFive bgColor="#327ffe" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <CategoryFive bgColor="#f36756"/>
+                        <CategoryFive bgColor="#f36756" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <CategoryFive bgColor="#ed50e7"/>
+                        <CategoryFive bgColor="#ed50e7" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <CategoryFive bgColor="#00D1EB"/>
+                        <CategoryFive bgColor="#00D1EB" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <CategoryFive bgColor="#F15571"/>
+                        <CategoryFive bgColor="#F15571" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <CategoryFive bgColor="#f1763a"/>
+                        <CategoryFive bgColor="#f1763a" />
                     </SwiperSlide>
-                </Swiper>
-            </Container>
+                </Swiper >
+            </Container >
 
-        </section>
+        </section >
     )
 }
 

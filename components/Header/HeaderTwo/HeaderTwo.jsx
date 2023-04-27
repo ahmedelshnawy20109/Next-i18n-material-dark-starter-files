@@ -7,16 +7,13 @@ import { useTranslation } from "next-i18next";
 import cls from './headerTwo.module.scss';
 import Link from "next/link";
 import { Drawer, Grid } from "@mui/material";
-import UserDrawer from "../userDrawer/userDrawer";
+import UserDrawer from "../UserDrawer/UserDrawer";
 import CartDrawer from "../CartDrawer/CartDrawer";
 import MobileNaveDrawer from "../MobileNaveDrawer/MobileNaveDrawer";
 
-const HeaderTwo = () => {
+const HeaderTwo = (props) => {
   const [navDropdown, setNavDropdown] = useState(0);
   const { t, i18n } = useTranslation('common');
-
-  
-  
 
   return (
     <header className={cls.navbar}>
@@ -372,15 +369,15 @@ const HeaderTwo = () => {
             <CartDrawer />
           </li>
           <li className={cls.btn}>
-            <Link href="#">Get Started</Link>
-          </li>
+            <Link href="#" style={props ? { backgroundColor: props.btnBg, color: props.btnColor, borderRadius: props.btnRadius } : ''}>Get Started</Link>
+          </li >
           <li className={`${cls.drawerItem} ${cls.mobileNave}`}>
             <MobileNaveDrawer />
           </li>
-        </ul>
-      </Container>
+        </ul >
+      </Container >
 
-    </header>
+    </header >
   );
 }
 

@@ -13,7 +13,7 @@ import 'swiper/css';
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import cls from "./CoursesSeven.module.scss"
+import cls from "./coursesSeven.module.scss"
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;

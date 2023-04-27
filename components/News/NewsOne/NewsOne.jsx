@@ -5,13 +5,13 @@ import Post from "./Post";
 
 import cls from "./newsOne.module.scss"
 
-const NewsOne = () => {
+const NewsOne = (props) => {
     return (
-        <section className={cls.News}>
+        <section className={cls.News} style={props ? { borderBottom: props.borderBottom } : ""}>
             <Container maxWidth="xl" className={cls.container}>
                 <Grid container className={cls.header} alignItems="center">
                     <Grid item md xs={12}>
-                        <h1>Upcoming Events</h1>
+                        <h1>Latest News</h1>
                         <p>Discover your perfect program in our courses.</p>
                     </Grid>
                     <Grid item md="auto" xs={12}>

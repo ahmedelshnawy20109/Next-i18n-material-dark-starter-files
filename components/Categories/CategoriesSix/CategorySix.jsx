@@ -2,7 +2,7 @@ import { Grid } from "@mui/material";
 import Link from "next/link.js";
 import React from "react";
 
-import cls from "./categorySix.module.scss"
+import cls from './categorySix.module.scss';
 
 const CategorySix = (props) => {
     return (

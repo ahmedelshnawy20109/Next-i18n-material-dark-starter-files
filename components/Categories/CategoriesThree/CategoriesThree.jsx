@@ -6,7 +6,7 @@ import cls from "./categoriesThree.module.scss"
 import Link from "next/link";
 import CategoryOne from "./CategoryThree";
 
-const CategoriesOne = () => {
+const CategoriesOne = (props) => {
     return (
         <section className={cls.categories}>
             <Container maxWidth="xl">

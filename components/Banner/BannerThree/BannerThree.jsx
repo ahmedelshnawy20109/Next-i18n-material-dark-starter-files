@@ -23,7 +23,7 @@ const BannerThree = () => {
                             <div className={cls.cardBody}>
                                 <h3>Dove School For Business</h3>
                                 <p>Get unlimited access to 5,200 of Skola top courses for your team.</p>
-                                <Link href="#">DOING BUSINESS</Link>
+                                <Link href="#" style={{ background: "#e0685c" }}>DOING BUSINESS</Link>
                             </div>
                         </div>
                     </Grid>

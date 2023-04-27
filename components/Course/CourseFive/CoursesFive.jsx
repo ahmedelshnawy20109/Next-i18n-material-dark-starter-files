@@ -7,7 +7,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import CourseFive from "./CourseFive";
 
-import cls from "./CoursesFive.module.scss"
+import cls from "./coursesFive.module.scss"
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link.js";
 
-import cls from "./categoryFive.module.scss"
+import cls from './categoryFive.module.scss'
 
 const CategoryFive = (props) => {
     return (
